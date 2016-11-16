@@ -121,6 +121,17 @@ Update MDwiki
 1. Click on the green button on that page to download the latest release
 1. Extract the contents of the archive file
 1. Copy `mdwiki-slim.html` file from the extracted files onto `ll_CC/index.html` file in this repository by renaming, thus overriding `index.html`
+. Click on the green button on that page to download the latest release
+1. Extract the contents of the archive file
+1. Copy `mdwiki-slim.html` file from the extracted files on this repository by renaming, thus overriding `index.html`
+1. Modify `index.html`to show title page on browser tab. Find this code: 
+ ```javascript 
+      function(a){function b(){var b;if(a.md.config.title&&a("title").text(a.md.config.title),b=a("#md-content h1").eq(0),a.trim(b.toptext()).length>0){a("#md-title").prepend(b);{b.toptext()}}else a("#md-title").remove()}
+ ``` 
+1. Update the version information above
+1. Commit and push your changes
+
+You can now delete a
 1. Update the version information above
 1. Commit and push your changes
 
